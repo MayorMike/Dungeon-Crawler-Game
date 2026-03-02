@@ -30,13 +30,17 @@ function keybindings() {
 
 function save_keybinds() {
     ini_open("keybinds.ini");
+    show_debug_message("Opening keybinds file!");
 
     with (obj_input) {
         for (var i = 0; i < array_length(keybinds); i++) {
             var bind = keybinds[i];
             ini_write_real("keybinds", bind.bindName, bind.key);
         }
+        show_debug_message("Keybinds Saved!");
     }
 
     ini_close();
+    show_debug_message("Closing keybinds file!");
+    
 }

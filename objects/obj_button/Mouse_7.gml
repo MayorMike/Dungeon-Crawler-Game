@@ -113,7 +113,11 @@ switch (button_id){
         layer_text_text(textID, scr_keytostring(0));
     break;
     case 100: //Save Keybinds Button - Save keybinds to file 
-        save_keybinds();
+        save_keybinds(); //Function located in scr_keybinds script
+        textID = layer_text_get_id("KeybindsLayer", "save_input_button_text");
+        layer_text_text(textID, "Keybinds Saved!");
+        alarm[0] = game_get_speed(gamespeed_fps);
+        
     break;
     
 }
