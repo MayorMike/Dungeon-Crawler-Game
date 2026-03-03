@@ -1,7 +1,7 @@
 keybinds = [];
 
 initializeKeybinds();
-load_keybinds(); //If custom keybinds exist, load them
+
 
 rebindMoveUp = false;
 rebindMoveLeft = false;
@@ -17,3 +17,5 @@ rebindShoot = false;
 textID = false;
 keyID = false;
 bindingKeys = false;
+load_keybinds(); //If custom keybinds exist, load them
+refresh_keybind_menu();

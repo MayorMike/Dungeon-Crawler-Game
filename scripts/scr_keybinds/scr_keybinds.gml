@@ -64,3 +64,22 @@ function load_keybinds() {
 
     ini_close();
 }
+
+function refresh_keybind_menu() {
+    
+    with (obj_input) {
+        for (var i = 0; i < array_length(keybinds); i++) {
+            var bind = keybinds[i];
+            
+            if (variable_struct_exists(bind, "key")) {
+                
+                var textName = "button_text_" + bind.bindName;
+                var textID = layer_text_get_id("KeybindsLayer", textName);
+                
+                if (textID != -1) {
+                    layer_text_text(textID, scr_keytostring(bind.key));
+                }
+            }
+        }
+    }
+}
