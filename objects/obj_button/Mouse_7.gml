@@ -5,9 +5,8 @@ switch (button_id){
         show_debug_message("Game Unpaused via Button!!!");
     break;
     
-    case 1: //Settings - Pause Menu
-        layer_set_visible("PauseLayer", false);
-        menu_control = "pause";
+    case 1: //Pause Menu to Settings
+        //layer_set_visible("PauseLayer", false);
         layer_set_visible("SettingsLayer", true);
         
     break;
@@ -16,29 +15,21 @@ switch (button_id){
         game_end();
     break;
     
-//THIS NEEDS FIXING!! V
-    case 3: //Back one menu
-        if menu_control = "pause"{
-        layer_set_visible("PauseLayer", true);
+
+    case 3: //Back from Settings to Pause
+        //layer_set_visible("PauseLayer", true);
         layer_set_visible("SettingsLayer", false);
-        }
-        else if menu_control = "main"{
-        layer_set_visible("MainMenuLayer", true);
-        layer_set_visible("SettingsLayer", false);
-        }
         
     break;
-//THIS NEEDS FIXKING!! ^
     case 4: //Settings to Keybinds
         layer_set_visible("KeybindsLayer", true);
         layer_set_visible("SettingsLayer", false);
         
     break;
 
-    case 5: //Settings Button - Main Menu
+    case 5: //Start Game - Main Menu
         layer_set_visible("MainMenuLayer", false);
-        menu_control = "main";
-        layer_set_visible("SettingsLayer", true);
+        room_goto_next();
         
     break;
     
