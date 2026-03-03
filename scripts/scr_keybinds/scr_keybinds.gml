@@ -49,13 +49,11 @@ function load_keybinds() {
     if (!file_exists("keybinds.ini")) {
         return; // No save file yet, keep defaults
     }
-
     ini_open("keybinds.ini");
 
     with (obj_input) {
         for (var i = 0; i < array_length(keybinds); i++) {
             var bind = keybinds[i];
-
             if (variable_struct_exists(bind, "key")) {
                 if (ini_key_exists("keybinds", bind.bindName)) {
                     bind.key = ini_read_real("keybinds", bind.bindName, bind.key);
