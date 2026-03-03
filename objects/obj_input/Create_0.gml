@@ -1,6 +1,7 @@
 keybinds = [];
 
 initializeKeybinds();
+load_keybinds(); //If custom keybinds exist, load them
 
 rebindMoveUp = false;
 rebindMoveLeft = false;
