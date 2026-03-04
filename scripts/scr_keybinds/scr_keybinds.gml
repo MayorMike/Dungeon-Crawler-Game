@@ -47,7 +47,7 @@ function save_keybinds() {
 
 function load_keybinds() {
     if (!file_exists("keybinds.ini")) {
-        return; // No save file yet, keep defaults
+        return; // No keybinds file yet, keep defaults
     }
     ini_open("keybinds.ini");
 

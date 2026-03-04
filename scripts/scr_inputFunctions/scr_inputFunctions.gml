@@ -180,3 +180,17 @@ function inputReplace(_name, _newKeybind) {
         }
     }
 }
+
+//Get the key used - used for detecting the dialog box key prompt (default E)
+function inputGetKey(_name) {
+    with (obj_input) {
+        for (var i = 0; i < array_length(keybinds); i++) {
+            if (keybinds[i].bindName == _name) {
+                if (variable_struct_exists(keybinds[i], "key")) {
+                    return keybinds[i].key;
+                }
+            }
+        }
+    }
+    return -1;
+}
