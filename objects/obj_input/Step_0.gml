@@ -123,9 +123,3 @@ if (rebindShoot == true) {
         show_debug_message("Shoot Key Set!");
     }
 }
-
-/*if keyboard_check_pressed(ord("L")) {
-    textID = layer_text_get_id("KeybindsLayer", "button_text_MoveUp");
-    layer_text_text(textID, keyboard_string);
-    textID = false;
-}*/
