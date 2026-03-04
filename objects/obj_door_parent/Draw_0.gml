@@ -1,6 +1,6 @@
 draw_self();
 
-var keycode = inputGetKey("Dialog");
+var keycode = inputGetKey("Action");
 var dialog_key = scr_keytostring(keycode);
 if (has_keys and !instance_exists(obj_dialog)){
     draw_sprite_stretched(spr_talk, 0, x + 4, y - 22, 10, 10);

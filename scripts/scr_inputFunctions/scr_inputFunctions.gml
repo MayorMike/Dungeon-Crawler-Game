@@ -181,7 +181,7 @@ function inputReplace(_name, _newKeybind) {
     }
 }
 
-//Get the key used - used for detecting the dialog box key prompt (default E)
+//Get the key used - used for detecting the dialog box key prompt or Action Key(default E)
 function inputGetKey(_name) {
     with (obj_input) {
         for (var i = 0; i < array_length(keybinds); i++) {
