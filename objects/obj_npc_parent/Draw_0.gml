@@ -6,14 +6,12 @@ var dialog_key = scr_keytostring(keycode);
 
 if (can_talk and !instance_exists(obj_dialog)){
 
-    draw_set_font(Font1); // set font BEFORE measuring
-
+    draw_set_font(Font1); // set font BEFORE measuring string
     var text_w = string_width(dialog_key) * 0.15;
-
     var text_h = string_height(dialog_key) * 0.15;
     
     var text_padding = 6;
-    var min_box_w = 10;
+    var min_box_w = 10; //Minimum size for spr_talk width to be
     
     var box_w = max(text_w + text_padding, min_box_w);
     var box_h = text_h + text_padding;
