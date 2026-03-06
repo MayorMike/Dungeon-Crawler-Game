@@ -9,7 +9,7 @@
   "canGenerateBitmap":true,
   "charset":0,
   "first":0,
-  "fontName":"Blrrpix Strict",
+  "fontName":"Blrrpix",
   "glyphOperations":0,
   "glyphs":{
     "32":{"character":32,"h":38,"offset":0,"shift":9,"w":9,"x":2,"y":2,},
@@ -107,7 +107,7 @@
     "124":{"character":124,"h":38,"offset":1,"shift":6,"w":4,"x":116,"y":42,},
     "125":{"character":125,"h":38,"offset":1,"shift":12,"w":10,"x":104,"y":42,},
     "126":{"character":126,"h":38,"offset":5,"shift":19,"w":13,"x":71,"y":202,},
-    "9647":{"character":9647,"h":38,"offset":6,"shift":31,"w":19,"x":86,"y":202,},
+    "9647":{"character":9647,"h":38,"offset":2,"shift":16,"w":11,"x":86,"y":202,},
   },
   "hinting":0,
   "includeTTF":false,
@@ -151,7 +151,10 @@
   "sdfSpread":8,
   "size":24.0,
   "styleName":"Strict",
-  "textureGroupId":null,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
   "TTFName":"",
   "usesSDF":false,
 }
