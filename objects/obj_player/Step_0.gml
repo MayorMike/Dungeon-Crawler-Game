@@ -45,7 +45,6 @@ else {
         stamina += 0.25;
     }
 }
-//Gamepad Sprint controls
 
 
 move_and_collide(_hor * move_speed, _ver * move_speed, tilemap, undefined, undefined, undefined, move_speed, move_speed);
@@ -80,11 +79,14 @@ else {
 }
 
 //Keyboard attack controls
-if (global.attack){
+if (global.attack and canAttack){
     var _inst = instance_create_depth(x, y, depth, obj_attack);
     _inst.image_angle = facing;
     _inst.damage *= damage;
+    canAttack = false;
+    alarm[1] = (fps / 2);
 }
+else {};
 /*
 //Gamepad attack controls
 if (global.gamepad_main != undefined){

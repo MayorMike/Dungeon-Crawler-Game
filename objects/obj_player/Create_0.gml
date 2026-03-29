@@ -24,6 +24,9 @@ chest_key = 0; //Number of chest keys player is holding - Silver Key
 
 facing = 0;
 
+canAttack = true;
+canShoot = true;
+
 //Inventory START - Should probably be an array or something... 
 //anything to make save file/carryover data easier. 
 hasShoes = false;

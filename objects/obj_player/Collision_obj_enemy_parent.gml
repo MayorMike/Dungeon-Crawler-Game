@@ -1,6 +1,6 @@
 if (alarm[0] < 0){
     hp -= other.damage;
-    alarm[0] = 30;
+    alarm[0] = (fps / 2);
     image_blend = c_red;
     audio_play_sound(snd_player_hit, 0, false);
     layer_set_visible("DamageShake", true);
