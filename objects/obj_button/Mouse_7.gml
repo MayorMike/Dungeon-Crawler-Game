@@ -28,6 +28,7 @@ switch (button_id){
     break;
 
     case 5: //Start Game - Main Menu
+        obj_pause_manager.MainMenu = false;
         layer_set_visible("MainMenuLayer", false);
         room_goto_next();
         

@@ -1,11 +1,13 @@
 //Manages pausing the game and Gamepad support for now. 
 //(I just didn't want to create a second object. Hopefully doesn't break stuff...)
 paused = false;
+MainMenu = true;
 layer_name = "PauseLayer";
 
 //Level ID controller. Tells the game what level it is on in a persistent object. 
 //Denotes what level player is in. Controls collectibles/upgrades.
 global.levelID = 1; 
+
 
 update_pause = function(){
     if (paused){
