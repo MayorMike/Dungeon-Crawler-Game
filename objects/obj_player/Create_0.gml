@@ -4,7 +4,6 @@ tilemap = [layer_tilemap_get_id("Tiles_Col"), obj_door_parent];
 tilemap_ground = layer_tilemap_get_id("Tiles_Back");
 tilemap_grass = layer_tilemap_get_id("Tiles_Grass");
 
-
 //Player Stat Variables
 hp = 10;
 hp_total = 10;
