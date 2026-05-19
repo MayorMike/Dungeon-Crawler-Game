@@ -86,6 +86,13 @@ if (global.attack and canAttack){
     canAttack = false;
     alarm[1] = (fps / 2);
 }
+
+//Keyboard Shoot Controls (Default Q)
+else if (global.shoot and canShoot and hasBow){
+    var _inst = instance_create_depth(x, y, depth, obj_arrow);
+    canShoot = false;
+    alarm[2] = (fps);
+}
 else {};
 /*
 //Gamepad attack controls
