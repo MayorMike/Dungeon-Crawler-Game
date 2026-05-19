@@ -6,7 +6,6 @@ if (instance_exists(obj_player) and distance_to_object(obj_player) < 8){
         create_dialog(dialog);
         
         if (final_npc){
-            global.levelID++;
             obj_dialog.next_room = true;
         }
     }

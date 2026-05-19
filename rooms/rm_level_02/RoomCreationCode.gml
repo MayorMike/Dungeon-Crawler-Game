@@ -1,1 +1,2 @@
 instance_deactivate_object(obj_bow);
+global.levelID++;
